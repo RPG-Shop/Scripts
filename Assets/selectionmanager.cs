@@ -14,6 +14,7 @@ public class selectionmanager : MonoBehaviour
     public string cube = "cube"; 
     public TextMeshProUGUI informationUI;
     private Transform _selection;
+    private bool openUI;
     // Start is called before the first frame update
     void Start()
     {
