@@ -11,6 +11,7 @@ public class click : MonoBehaviour
     public Button btn3;
     public Button btn4;
     public Button close;
+    public Button close_obj;
     public GameObject show_UI;
     public GameObject obj1;
     public GameObject obj2;
@@ -26,20 +27,39 @@ public class click : MonoBehaviour
         btn1.onClick.AddListener(() => {
             OnBtnClick();
             obj1.SetActive(true);
+            obj2.SetActive(false);
+            obj3.SetActive(false);
+            obj4.SetActive(false);
         });
         btn2.onClick.AddListener(() => {
             OnBtnClick();
             obj2.SetActive(true);
+            obj1.SetActive(false);
+            obj3.SetActive(false);
+            obj4.SetActive(false);
         });
         btn3.onClick.AddListener(() => {
             OnBtnClick();
             obj3.SetActive(true);
+            obj2.SetActive(false);
+            obj1.SetActive(false);
+            obj4.SetActive(false);
         });
         btn4.onClick.AddListener(() => {
             OnBtnClick();
             obj4.SetActive(true);
+            obj2.SetActive(false);
+            obj3.SetActive(false);
+            obj1.SetActive(false);
         });
         close.onClick.AddListener(() => {
+            OnBtnClick();
+            //obj1.SetActive(false);
+            //obj2.SetActive(false);
+            //obj3.SetActive(false);
+            //obj4.SetActive(false);
+        });
+        close_obj.onClick.AddListener(() => {
             OnBtnClick();
             obj1.SetActive(false);
             obj2.SetActive(false);
